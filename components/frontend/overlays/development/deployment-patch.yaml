@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/northdepot/user1-tenant/graphtuitous/frontend@sha256:813e3d22a0a5695ae47cfd0cca20429bd5e096711b6c14e64cd050700a2016e4
+        name: container-image
+        resources: {}
+status: {}
